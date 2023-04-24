@@ -1,0 +1,30 @@
+@import "../../sass/devices.scss";
+@import "../../sass/colors.scss";
+
+$border: 2px solid $activeColor;
+
+.footer {
+  color: white;
+  padding: 16px 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-shrink: 0;
+  border-top: $border;
+  z-index: 999;
+  background-color: $gray5;
+}
+
+.newsCount {
+  font-size: 1rem;
+  color: #ccc;
+}
+
+.noArticles {
+  @include mobile {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+  }
+}

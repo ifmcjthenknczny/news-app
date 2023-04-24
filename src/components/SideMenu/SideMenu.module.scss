@@ -1,0 +1,24 @@
+@import "../../sass/devices.scss";
+@import "../../sass/variables.scss";
+@import "../../sass/colors.scss";
+
+$sideMenuWidth: 240px;
+
+.sideMenu {
+  margin: 8px 0 8px;
+  min-width: $sideMenuWidth;
+  background-color: $gray4;
+  list-style: none;
+  direction: rtl;
+
+  @include mobile {
+    min-width: auto;
+    width: 100%;
+    margin-bottom: 24px;
+  }
+}
+
+.noArticlesLoaded {
+  max-height: $fullscreenContentHeight;
+  overflow-y: scroll;
+}

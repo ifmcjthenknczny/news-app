@@ -1,0 +1,7 @@
+$mobileWidthThreshold: 768px;
+
+@mixin mobile {
+    @media (max-width: $mobileWidthThreshold) {
+        @content;
+    }
+}

@@ -1,0 +1,39 @@
+@import "../../sass/devices.scss";
+@import "../../sass/colors.scss";
+
+.articleModal {
+  width: 30%;
+  background-color: $gray4;
+  color: white;
+  @include mobile {
+    max-height: 80%;
+    overflow-y: scroll;
+  }
+}
+
+.source {
+  transition: all 0.2s ease-in-out;
+  &:hover {
+    transform: scale(1.1);
+  }
+}
+
+.url {
+  color: $activeColor;
+  text-decoration: none;
+}
+
+.content {
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.9rem;
+  margin-bottom: 16px;
+}
+
+.authorName {
+  font-weight: 700;
+}
+
+.author {
+  font-style: italic;
+  margin-right: 4px;
+}

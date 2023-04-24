@@ -1,0 +1,17 @@
+@import "../../sass/colors.scss";
+
+.clickable {
+  background-color: transparent;
+  border-width: 0;
+  font-family: inherit;
+  font-style: inherit;
+  font-weight: inherit;
+  line-height: inherit;
+  padding: 0;
+  color: $gray1;
+  &:hover {
+    cursor: pointer;
+    text-decoration: underline;
+    color: white;
+  }
+}

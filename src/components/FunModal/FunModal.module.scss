@@ -1,0 +1,19 @@
+@import '../../sass/devices.scss';
+
+.list {
+  list-style-type: none;
+  padding: 16px;
+  margin: 0;
+  @include mobile {
+    padding: 8px;
+  }
+}
+
+.listElement {
+  margin: 24px 0 24px;
+}
+
+.paragraph {
+  font-size: 0.6rem;
+  margin: 8px 0 0;
+}
